@@ -1,0 +1,118 @@
+<! DOCTYPE html>
+
+
+
+<head>
+<style>
+body {
+    background-image: url("globe.jpg");
+    background-repeat: no-repeat;
+	background-size: 2054px 1000px;
+	background-position: center;
+    
+}
+fieldset {margin:auto; margin-top:50px;  width: 40%; }
+label { background:yellow; float:left; width:150px; } 
+
+<!--unvisited link -->
+a:link {
+    
+    color: #FF0000  ;
+}
+<!-- visited link -->
+a:visited {
+    color: #FF0000 ;
+}
+
+<!-- HEADING COLOR -->
+h1 {
+    color:blue;
+    font-family:Times New Roman;
+    font-size:300%;
+
+}
+h2 {
+    color:red;
+    font-family:Times New Roman;
+    font-size:160%;
+}
+
+
+</style>
+</head>
+
+
+
+
+
+
+
+<script>
+
+function whatever()
+{
+    if ( document.getElementById ("change") .checked )
+    {
+        document.getElementById( "password") .type = "text"
+    }
+    else
+    {
+    document.getElementById( "password") .type = "password"
+    }
+        
+		
+}
+</script>
+
+
+
+
+<head>
+
+<div class="formheaders">
+<h1><center>HELLO USER!!</h1>
+<h2><center>This is Fnu Saba's Page. </h2>
+
+</div>
+</center>
+
+</body>
+
+<form action="form.php">
+<fieldset><legend> WELCOME TO LEGEND PAGE.</legend>
+
+<label for="password">Instructor pwd</label>
+<input type=password name="password" id="password" 
+		required autofocus="on" autocomplete="off" 
+		placeholder="Password Please"><input type =checkbox 
+		id = "change" onclick = "whatever()">change style<br><br>
+
+<label for="username" >Username</label>
+<input type=text  name="username"  id="username" 
+			autofocus="on"  autocomplete = off 
+			placeholder = "Enter username please"><br><br>
+
+<label for ="all"> All </label>
+<input type=checkbox name= "all" id="all"><br><br>
+
+<label for ="single"> Email (single) student </label>
+<input type=checkbox name="single" id="single"><br><br>
+
+
+
+<input type=submit ><br><br>
+
+<b><a href="images/httpmessage.JPG">Hyperlink to images page[w. HTTP message snapshots]</a></b><br><br>
+<b><a href="statement.txt">Hyperlink to statement page</a></b><br><br>
+<b><a href="form.text">Hyperlink to txt versions of the PHP files [but not the DB file]</a></b><br><br>
+
+</fieldset>
+
+
+
+
+</form>   
+			
+
+
+</html>
